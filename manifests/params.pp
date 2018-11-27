@@ -102,7 +102,7 @@ class filebeat::params {
         'x64'   => 'x86_64',
         default => fail("${::architecture} is not supported by filebeat."),
       }
-      $install_dir      = "C:/ProgramData/chocolatey/lib/filebeat/tools/filebeat-${package_ensure}-windows-${url_arch}"
+      $install_dir      = "C:/ProgramData/chocolatey/lib/filebeat/tools"
       $config_file      = "${install_dir}/filebeat.yml"
       $config_dir       = "${install_dir}/conf.d"
       $registry_file    = 'C:/ProgramData/filebeat/registry'
