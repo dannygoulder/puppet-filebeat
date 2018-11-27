@@ -92,7 +92,7 @@ class filebeat::params {
     }
 
     'Windows' : {
-      $package_ensure   = '6.2.4'
+      $package_ensure   = '6.4.3'
       $config_file_owner = 'Administrator'
       $config_file_group = undef
       $config_dir_owner = 'Administrator'
